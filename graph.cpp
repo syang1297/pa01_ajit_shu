@@ -1,3 +1,6 @@
+//Names: Ajit Vijayakumar & Shu Yang
+//Date: Oct 26, 2017
+
 // FILE: graph.cpp (part of the namespace main_savitch_15)
 // TEMPLATE CLASS IMPLEMENTED: graph<Item> (See graph.h for documentation.)
 // This file is included in the header file and not compiled separately.

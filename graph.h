@@ -1,3 +1,7 @@
+//Names: Ajit Vijayakumar & Shu Yang
+//Date: Oct 26, 2017
+
+
 // FILE: graph.h (part of the namespace main_savitch_15)
 // TEMPLATE CLASS PROVIDED: graph<Item> (a class for labeled graphs)
 //   The vertices of an n-vertex graph are numbered from zero to n-1. Each vertex
