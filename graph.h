@@ -83,11 +83,17 @@ namespace main_savitch_15
         static const size_t MAXIMUM = 20;
         // CONSTRUCTOR
         graph( );
+        graph(size_t initial_allocation);
+	graph (const graph &source);
+	// DESTRUCTOR
+	~graph();
         // MODIFICATION MEMBER FUNCTIONS
         void add_vertex(const Item& label);
         void add_edge(size_t source, size_t target);
         void remove_edge(size_t source, size_t target);
         Item& operator [ ] (size_t vertex);
+	void resize(size_t new_allocation);
+	graph &operater = (const graph & source);
         // CONSTANT MEMBER FUNCTIONS
         size_t size( ) const { return many_vertices; }
         bool is_edge(size_t source, size_t target) const;

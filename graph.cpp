@@ -19,12 +19,40 @@ using std::size_t;
 
 namespace main_savitch_15
 {
+    template<class Item>
+    graph<Item>:: graph( size_t initial_allocation){
+        //constructor that takes inital allocation for the dynamic arrays)
+    }
+
+    template<class Item>
+    graph<Item>::graph(const graph &source){
+        //stub
+        return *this;
+    }
+
+    template<class Item>
+    graph<Item>::~graph(){
+	    //deallocate memory previously stored
+	    if(edges[vertex]{
+	      delete [] graph;
+	    }
+    }
+    
+    template<class Item>
+    void graph<Item>::resize(size_t new_allocation){
+    //resize function
+    }
+
+    template < class Item>
+    graph<Item>:: graph & operator=(const  graph &source){
+    //stub
+    }
+
     template <class Item>
     graph<Item>::graph ( ) : many_vertices(0) {
         // intentionally empty
     }
-
-    template <class Item>
+    template < class Item>
     void graph<Item>::add_edge(size_t source, size_t target)
     // Library facilities used: cassert, cstdlib
     {
