@@ -79,8 +79,6 @@ namespace main_savitch_15
     class graph
     {
     public:
-        // MEMBER CONSTANTS
-        static const size_t MAXIMUM = 20;
         // CONSTRUCTOR
         graph( );
         graph(size_t initial_allocation);
@@ -100,9 +98,12 @@ namespace main_savitch_15
         std::set<size_t> neighbors(size_t vertex) const;
         Item operator[ ] (size_t vertex) const;
     private:
-        bool edges[MAXIMUM][MAXIMUM];
-        Item labels[MAXIMUM];
-        size_t many_vertices;
+        bool **edges;
+        Item *labels;
+	std::size_t allocated;
+	std::size_t many_vertices;
+	int allocated;
+
     };
 }
 

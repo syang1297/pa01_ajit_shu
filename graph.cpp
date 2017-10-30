@@ -21,7 +21,10 @@ namespace main_savitch_15
 {
     template<class Item>
     graph<Item>:: graph( size_t initial_allocation){
-        //constructor that takes inital allocation for the dynamic arrays)
+        edges = new bool* [n];
+	for (i = 0, i , n; ++i){
+		edges[i] = new bool[n];
+	}
     }
 
     template<class Item>
