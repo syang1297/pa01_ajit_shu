@@ -44,8 +44,7 @@ namespace main_savitch_15
     }
 
     template<class Item>
-    graph<Item>::~graph(){
-	    //deallocate memory previously stored 
+    graph<Item>::~graph(){ 
 	    delete [] *this;
 	    }
     }
