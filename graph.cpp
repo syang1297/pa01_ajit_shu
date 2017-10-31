@@ -29,25 +29,34 @@ namespace main_savitch_15
 
     template<class Item>
     graph<Item>::graph(const graph &source){
-        //stub
+        graph( size_t &this);
+	for(i=0; i<n; ++i){
+		for(j=0; j<n; ++j){
+			if(source.edges[i][j]==true){
+					this.edges[i][j]=true;
+			}
+			else{
+					this.edges[i][j]=false;
+			}
+		}
+	}
         return *this;
     }
 
     template<class Item>
     graph<Item>::~graph(){
-	    //deallocate memory previously stored
-	    if(edges[vertex]{
-	      delete [] graph;
+	    //deallocate memory previously stored 
+	    delete [] *this;
 	    }
     }
     
     template<class Item>
     void graph<Item>::resize(size_t new_allocation){
-    //resize function
+    //stub
     }
 
     template < class Item>
-    graph<Item>:: graph & operator=(const  graph &source){
+    graph<Item>:: graph &operator=(const  graph &source){
     //stub
     }
 
